@@ -4,6 +4,7 @@ import { ButtonElement, Container } from './style'
 // Icons
 import { FiGithub } from 'react-icons/fi'
 import { RiLinkedinLine, RiSendPlaneLine } from 'react-icons/ri'
+import { PiCodeLight } from 'react-icons/pi'
 
 interface ButtonProps {
   icon?: string
@@ -19,6 +20,9 @@ export default function Button({ icon, description }: ButtonProps) {
       break
     case 'linkedin':
       IconComponent = RiLinkedinLine
+      break
+    case 'code':
+      IconComponent = PiCodeLight
       break
     default:
       IconComponent = null
