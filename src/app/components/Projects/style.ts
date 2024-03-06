@@ -4,12 +4,9 @@ import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-between;
-  margin: 0rem 1rem;
-
-  @media (max-width: 940px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
+  padding: 1rem 0;
+  width: 100%;
 `
 
 export const SlideElement = styled.div`
@@ -17,35 +14,44 @@ export const SlideElement = styled.div`
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer and Microsoft Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 
   &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari e Opera */
+    display: none;
   }
 `
 
 export const SlideItem = styled.div`
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.5rem;
-  margin: 0rem 1rem;
+  flex: 0 0 auto;
+  width: 24.89rem;
+  height: 14rem;
   position: relative;
+  border: 1px solid ${colors.primary};
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+  overflow: hidden;
+
+  @media (max-width: 1040px) {
+    width: 21.89rem;
+    height: 12rem;
+  }
+  @media (max-width: 640px) {
+    width: 17rem;
+    height: 9rem;
+  }
 `
 
-export const SlideImage = styled(Image)<{ isHovered: boolean }>`
-  filter: ${({ isHovered }) => (isHovered ? 'blur(9px)' : 'none')};
-  overflow: hidden;
-  transition: filter 0.3s ease;
-  transition: background-color 0.3s ease;
+export const SlideImage = styled.img<{ isHovered: boolean }>`
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
+  filter: ${({ isHovered }) => (isHovered ? 'blur(9px)' : 'none')};
+  transition: filter 0.3s ease;
 
   &:hover {
-    filter: blur(3px);
+    filter: ${({ isHovered }) => (isHovered ? 'blur(3px)' : 'none')};
   }
 `
 
@@ -60,4 +66,14 @@ export const ButtonPanel = styled.div`
   & > * {
     margin: 1rem;
   }
+`
+
+export const Ribbon = styled.div`
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: ${colors.primary};
+  color: ${colors.white};
+  padding: 0.5rem 4rem;
+  transform: translate(50%, -50%) rotate(45deg);
 `
