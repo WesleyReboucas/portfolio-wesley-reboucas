@@ -1,31 +1,44 @@
+import { colors } from '@/app/styles/theme'
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  max-width: 100%;
+  margin: 1rem 0;
+  margin: 3rem 0;
+`
+
+export const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  max-width: 100%;
-  margin: 0rem 3rem;
+
+  @media (max-width: 1224px) {
+    flex-direction: column-reverse;
+  }
 `
 
-export const Resume = styled.div`
-  display: flex;
-  background-color: red;
+export const Info = styled.div`
+  width: 70%;
+
+  @media (max-width: 1224px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 `
 
-export const Profile = styled.div`
-  display: flex;
-  background-color: green;
+export const InfoTitle = styled.div`
+  padding-bottom: 1rem;
 `
 
-export const TitleContainer = styled.div`
-  display: flex;
-  font-size: 2.5rem;
-
-  background-color: yellow;
+export const ImageContainer = styled.div`
+  width: 30%;
+  @media (max-width: 1224px) {
+    display: none;
+  }
 `
 
-export const SocialButtonContainer = styled.div`
-  display: flex;
-  background-color: blue;
+export const ImageContent = styled.img`
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  transition: filter 0.3s ease;
 `
