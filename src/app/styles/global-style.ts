@@ -7,7 +7,8 @@ type ColorKey = keyof typeof colors
 interface CodeTextProps {
   color?: ColorKey
   $upperCaseColor?: boolean
-  lineHeightOff?: boolean
+  lineHeight?: number
+  size?: number
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -57,8 +58,8 @@ export const Subtitle = styled.h3<CodeTextProps>`
 
     return css`
       color: ${chosenColor};
-      padding-left: ${props.$upperCaseColor ? '0.5rem' : '0rem'};
-      font-size: 1.5rem;
+      padding-right: ${props.$upperCaseColor ? '0.5rem' : '0rem'};
+      font-size: ${props.size ? props.size : 1.5}rem;
       margin: 1rem 0rem;
       font-weight: bold;
 
@@ -76,12 +77,10 @@ export const Text = styled.p<CodeTextProps>`
 
     return css`
       color: ${chosenColor};
-      margin-top: 0.5rem;
-      /* margin-bottom: 0.5rem; */
       font-size: 1.05rem;
       font-weight: 400;
       white-space: normal;
-      line-height: ${props.lineHeightOff ? 0 : 1.7};
+      line-height: ${props.lineHeight ? props.lineHeight : 1.7}rem;
 
       &:not(:empty)::first-letter {
         color: ${uppercaseColor};
@@ -98,7 +97,7 @@ export const CodeText = styled.span<CodeTextProps>`
     return css`
       color: ${chosenColor};
       font-weight: 100;
-      font-size: 1rem;
+      font-size: ${props.size ? props.size : 1}rem;
       font-family: monospace;
 
       &:not(:empty)::first-letter {

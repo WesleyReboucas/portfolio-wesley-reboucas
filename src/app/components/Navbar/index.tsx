@@ -76,7 +76,7 @@ export default function Navbar() {
           {navLinks.map((link, index) => (
             <StyledListItem key={index}>
               <StyledLink href={link.path} onClick={handleLinkClick}>
-                <Text color='white' lineHeightOff>
+                <Text color='white' lineHeight={0.5}>
                   {link.title}
                 </Text>
               </StyledLink>

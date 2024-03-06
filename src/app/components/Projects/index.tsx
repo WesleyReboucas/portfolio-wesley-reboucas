@@ -8,7 +8,7 @@ import {
   Container,
 } from './style'
 import { CodeText, Subtitle } from '@/app/styles/global-style'
-import { images, ImageItem } from '../../../utils/data'
+import { images, ImageItemProps } from '../../../utils/data'
 import Button from '../Button'
 import Link from 'next/link'
 
@@ -19,7 +19,7 @@ export default function Projects() {
     <Container>
       <Subtitle $upperCaseColor>Projects</Subtitle>
       <SlideElement>
-        {images.map((item: ImageItem, index: number) => (
+        {images.map((item: ImageItemProps, index: number) => (
           <SlideItem
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
