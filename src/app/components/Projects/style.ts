@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-direction: column;
   padding: 1rem 0;
   width: 100%;
+  margin-bottom: 1rem;
 `
 
 export const SlideElement = styled.div`
@@ -16,6 +17,7 @@ export const SlideElement = styled.div`
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  margin-top: 1rem;
 
   &::-webkit-scrollbar {
     display: none;

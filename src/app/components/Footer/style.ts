@@ -9,7 +9,6 @@ export const Container = styled.div`
   margin-bottom: 3rem;
 
   @media (max-width: 940px) {
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin: 1rem 0;
   }
 `

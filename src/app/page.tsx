@@ -3,12 +3,12 @@
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Header from './components/Header'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import { colors } from './styles/theme'
 import About from './components/About'
+import Header from './components/Header'
 
 const Container = styled.div`
   display: flex;
@@ -37,6 +37,7 @@ export default function Home() {
     <Container>
       <Content>
         <Navbar />
+        <Header />
         <About />
         <Projects />
         <Experience />
