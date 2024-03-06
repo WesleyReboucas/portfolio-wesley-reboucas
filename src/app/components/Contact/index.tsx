@@ -17,7 +17,7 @@ export default function Contact() {
 
   return (
     <div>
-      <Subtitle $upperCaseColor>Contact</Subtitle>
+      <Subtitle $upperCaseColor>Get in Touch</Subtitle>
       <Container>
         <Info>
           <Text>
