@@ -29,6 +29,7 @@ export const Duration = styled.div`
 
 export const Description = styled.div`
   padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 `
 
 export const Stacks = styled.div`
@@ -56,6 +57,5 @@ export const StackTitle = styled.div`
 
   & > svg {
     margin-right: 0.5rem;
-    /* color: ${colors.primary}; */
   }
 `

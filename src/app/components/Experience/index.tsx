@@ -13,6 +13,7 @@ import {
 import { experiences, ExperiencesProps } from '../../../utils/data'
 import Link from 'next/link'
 import { BsStars } from 'react-icons/bs'
+import Highlights from '../Highlights'
 
 export default function Experience() {
   return (
@@ -34,14 +35,13 @@ export default function Experience() {
           <Description>
             <Text>{item.responsibilities}</Text>
           </Description>
-          <Stacks>
-            <StackTitle>
-              <BsStars />
-              <Text color='white'>Stacks:</Text>
-            </StackTitle>
 
-            <Text>{item.skills}</Text>
-          </Stacks>
+          <Highlights
+            icon='skill'
+            title='Stacks:'
+            description={item.skills}
+            lineBreak
+          />
         </Content>
       ))}
     </Container>
