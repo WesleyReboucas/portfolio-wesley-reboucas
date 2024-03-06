@@ -77,7 +77,7 @@ export const Text = styled.p<CodeTextProps>`
 
     return css`
       color: ${chosenColor};
-      font-size: 1.05rem;
+      font-size: ${props.size ? props.size : 1.05}rem;
       font-weight: 400;
       white-space: normal;
       line-height: ${props.lineHeight ? props.lineHeight : 1.7}rem;

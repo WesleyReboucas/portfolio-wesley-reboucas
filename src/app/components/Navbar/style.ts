@@ -6,7 +6,6 @@ export const NavbarContent = styled.div`
   display: flex;
   align-items: center;
   max-width: 100%;
-  margin: 0rem 1rem;
 `
 
 export const LogoContainer = styled.div`

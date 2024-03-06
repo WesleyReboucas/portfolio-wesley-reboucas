@@ -24,21 +24,22 @@ export const SlideElement = styled.div`
 
 export const SlideItem = styled.div`
   flex: 0 0 auto;
-  width: 24.89rem;
-  height: 14rem;
+  width: 18rem;
+  height: 10rem;
   position: relative;
   border: 1px solid ${colors.primary};
   border-radius: 1rem;
   margin: 0 0.5rem;
   overflow: hidden;
+  transition: width 0.3s ease;
 
-  @media (max-width: 1040px) {
-    width: 21.89rem;
-    height: 12rem;
+  @media (max-width: 840px) {
+    width: 16rem;
+    height: 9rem;
   }
   @media (max-width: 640px) {
-    width: 17rem;
-    height: 9rem;
+    width: 14rem;
+    height: 7rem;
   }
 `
 
@@ -74,6 +75,6 @@ export const Ribbon = styled.div`
   right: 2rem;
   background-color: ${colors.primary};
   color: ${colors.white};
-  padding: 0.5rem 4rem;
+  padding: 0.1rem 4rem;
   transform: translate(50%, -50%) rotate(45deg);
 `

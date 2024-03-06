@@ -4,10 +4,9 @@ import {
   SlideImage,
   SlideItem,
   ButtonPanel,
-  Ribbon,
   Container,
 } from './style'
-import { CodeText, Subtitle } from '@/app/styles/global-style'
+import { Subtitle } from '@/app/styles/global-style'
 import { images, ImageItemProps } from '../../../utils/data'
 import Button from '../Button'
 import Link from 'next/link'
@@ -39,9 +38,11 @@ export default function Projects() {
               src={item.src}
               alt={item.alt}
             />
-            <Ribbon>
-              <CodeText>{item.ribbon}</CodeText>
-            </Ribbon>
+            {/* <Ribbon>
+              <Text color='white' size={0.8}>
+                {item.ribbon}
+              </Text>
+            </Ribbon> */}
           </SlideItem>
         ))}
       </SlideElement>

@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0rem 1rem;
+  transition: width 0.3s ease;
 
   @media (max-width: 940px) {
     flex-direction: column;
@@ -19,6 +20,7 @@ export const Info = styled.div`
   width: 50%;
   justify-content: space-between;
   margin-bottom: 3rem;
+  transition: width 0.3s ease;
 
   @media (max-width: 940px) {
     padding-right: 0rem;
@@ -32,6 +34,7 @@ export const ContactContainer = styled.form`
   display: flex;
   width: 50%;
   flex-direction: column;
+  transition: width 0.3s ease;
 
   @media (max-width: 940px) {
     width: 100%;
