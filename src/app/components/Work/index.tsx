@@ -8,7 +8,7 @@ import {
   Ribbon,
 } from './style'
 import { Subtitle, Text } from '@/app/styles/global-style'
-import { images, ImageItemProps } from '../../../utils/data'
+import { workImages, WorkImageItemProps } from '../../../utils/data'
 import Button from '../Button'
 import Link from 'next/link'
 
@@ -19,7 +19,7 @@ export default function Work() {
     <Container>
       <Subtitle $upperCaseColor>Work</Subtitle>
       <SlideElement>
-        {images.map((item: ImageItemProps, index: number) => (
+        {workImages.map((item: WorkImageItemProps, index: number) => (
           <SlideItem
             key={index}
             onMouseEnter={() => setHoveredIndex(index)}
@@ -29,9 +29,9 @@ export default function Work() {
                 <Link href={item.githubLink || '#'}>
                   <Button icon='github' description='Github' />
                 </Link>
-                <Link href={item.siteLink || '#'}>
+                {/* <Link href={item.siteLink || '#'}>
                   <Button icon='code' description='Demo' />
-                </Link>
+                </Link> */}
               </ButtonPanel>
             )}
             <SlideImage

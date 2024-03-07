@@ -12,6 +12,7 @@ export const Content = styled.div`
   padding-bottom: 1rem;
   border-left: 1px solid ${colors.primary};
   margin: 0rem 1rem;
+  padding-bottom: 3rem;
 `
 
 export const Duration = styled.div`
