@@ -39,15 +39,17 @@ export const InfoContentTitle = styled.div`
 export const ButtonsContainer = styled.div`
   display: flex;
   align-items: center;
+  /* justify-content: space-between; */
   margin: 1rem 0rem;
 `
 
 export const SocialMediaContainer = styled.div`
   display: flex;
   align-items: center;
+  padding: 0rem 1rem;
 
   & > * {
-    padding: 1rem 0.2rem;
+    padding: 1rem 1rem;
   }
 `
 

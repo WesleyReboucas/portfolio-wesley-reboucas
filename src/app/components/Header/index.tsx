@@ -77,11 +77,11 @@ export default function Header() {
           <ButtonsContainer>
             <Button description='Get in Touch' />
             <SocialMediaContainer>
+              <SocialMediaLink href='https://github.com/WesleyReboucas'>
+                <FiGithub size={30} />
+              </SocialMediaLink>
               <SocialMediaLink href='https://www.linkedin.com/in/wesleyreboucas/'>
                 <RiLinkedinLine />
-              </SocialMediaLink>
-              <SocialMediaLink href='https://github.com/WesleyReboucas'>
-                <FiGithub />
               </SocialMediaLink>
             </SocialMediaContainer>
           </ButtonsContainer>
