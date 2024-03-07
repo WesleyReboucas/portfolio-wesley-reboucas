@@ -13,10 +13,6 @@ export const LogoContainer = styled.div`
   display: flex;
 `
 
-export const LogoLink = styled(Link)`
-  display: flex;
-`
-
 export const MobileMenu = styled.div`
   display: block;
 
@@ -49,6 +45,7 @@ export const Menu = styled.div`
 
 export const MenuList = styled.ul`
   display: flex;
+  align-items: center;
   padding: 1rem;
   list-style: none;
   margin: 0;

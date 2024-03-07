@@ -16,6 +16,9 @@ import {
   StyledListItem,
 } from './style'
 import { Subtitle, Text } from '../../styles/global-style'
+import Button from '../Button'
+import Image from 'next/image'
+import Logo from '../Logo'
 
 const navLinks = [
   {
@@ -47,10 +50,7 @@ export default function Navbar() {
     <main>
       <NavbarContent>
         <LogoContainer>
-          <LogoLink href='/'>
-            <Subtitle $upperCaseColor={true}>Wesley</Subtitle>
-            <Subtitle $upperCaseColor={true}>Rebouças</Subtitle>
-          </LogoLink>
+          <Logo />
         </LogoContainer>
         <MobileMenu>
           <MenuButton onClick={() => setNavbarOpen(!navbarOpen)}>
@@ -68,6 +68,7 @@ export default function Navbar() {
                 <StyledLink href={link.path}>{link.title}</StyledLink>
               </MenuItem>
             ))}
+            <Button description='Resume' />
           </MenuList>
         </Menu>
       </NavbarContent>
