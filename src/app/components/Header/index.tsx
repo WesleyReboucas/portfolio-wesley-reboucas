@@ -15,6 +15,7 @@ import {
   ImageContainer,
   ImageContent,
   Info,
+  InfoContentTitle,
   InfoTitle,
 } from './style'
 
@@ -22,12 +23,11 @@ export default function Header() {
   return (
     <Container>
       <Content>
-        <ImageContainer>
-          <ImageContent src={'/avatar/avatar-dev.png'} alt='Dev Image' />
-        </ImageContainer>
         <Info>
           <InfoTitle>
-            <Title> Wesley Rebouças </Title>
+            <InfoContentTitle>
+              <Title> Wesley Rebouças </Title>
+            </InfoContentTitle>
             <CodeText color='text'>
               &lt;
               <CodeText color='primary'>code</CodeText>&gt; I&apos;m{' '}
@@ -67,6 +67,9 @@ export default function Header() {
             <Bold> prosper</Bold>!
           </Text>
         </Info>
+        <ImageContainer>
+          <ImageContent src={'/avatar/avatar-dev.png'} alt='Dev Image' />
+        </ImageContainer>
       </Content>
     </Container>
   )

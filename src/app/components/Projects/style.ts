@@ -1,13 +1,17 @@
+import { Section } from '@/app/styles/global-style'
 import { colors } from '@/app/styles/theme'
 import Image from 'next/image'
 import styled, { css } from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled(Section)`
   display: flex;
   flex-direction: column;
   padding: 1rem 0;
   width: 100%;
-  margin-bottom: 1rem;
+
+  @media (max-width: 640px) {
+    margin: 2rem 0;
+  }
 `
 
 export const SlideElement = styled.div`
@@ -29,7 +33,6 @@ export const SlideItem = styled.div`
   width: 18rem;
   height: 10rem;
   position: relative;
-  border: 1px solid ${colors.primary};
   border-radius: 1rem;
   margin: 0 0.5rem;
   overflow: hidden;

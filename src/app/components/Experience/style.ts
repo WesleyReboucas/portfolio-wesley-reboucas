@@ -1,10 +1,10 @@
+import { Section } from '@/app/styles/global-style'
 import { colors } from '@/app/styles/theme'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled(Section)`
   display: flex;
   flex-direction: column;
-  margin-bottom: 3rem;
 `
 
 export const Content = styled.div`

@@ -5,8 +5,9 @@ import {
   SlideItem,
   ButtonPanel,
   Container,
+  Ribbon,
 } from './style'
-import { Subtitle } from '@/app/styles/global-style'
+import { Subtitle, Text } from '@/app/styles/global-style'
 import { images, ImageItemProps } from '../../../utils/data'
 import Button from '../Button'
 import Link from 'next/link'

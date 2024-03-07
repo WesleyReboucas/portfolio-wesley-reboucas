@@ -1,10 +1,9 @@
+import { Section } from '@/app/styles/global-style'
 import { colors } from '@/app/styles/theme'
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled(Section)`
   max-width: 100%;
-  margin: 1rem 0;
-  margin-bottom: 1rem;
 `
 
 export const Content = styled.div`

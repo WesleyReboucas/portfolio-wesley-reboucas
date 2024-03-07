@@ -5,7 +5,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 0rem 1rem;
   transition: width 0.3s ease;
 
   @media (max-width: 940px) {

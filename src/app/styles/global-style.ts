@@ -25,6 +25,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 `
 
+export const Section = styled.div`
+  margin: 4rem 0;
+`
+
 export const Title = styled.h1<CodeTextProps>`
   ${(props) => {
     const chosenColor = props.color ? colors[props.color] : colors.white
@@ -59,7 +63,7 @@ export const Subtitle = styled.h3<CodeTextProps>`
     return css`
       color: ${chosenColor};
       padding-right: ${props.$upperCaseColor ? '0.5rem' : '0rem'};
-      font-size: ${props.size ? props.size : 1.5}rem;
+      font-size: ${props.size ? props.size : 1.7}rem;
       margin: 1rem 0rem;
       font-weight: bold;
 

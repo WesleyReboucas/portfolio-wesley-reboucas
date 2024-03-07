@@ -8,7 +8,6 @@ interface ButtonProps {
 
 export const Container = styled.div`
   display: flex;
-  padding-top: 1rem;
   width: 100%;
 `
 

@@ -80,7 +80,7 @@ export default function About() {
               <Highlights
                 icon='skill'
                 title='Interests:'
-                description='Books, films, guitar, etc'
+                description='Books, movies, guitar'
               />
             </ListItem>
           </Grid>
