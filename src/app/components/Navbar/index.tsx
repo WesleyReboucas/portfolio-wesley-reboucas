@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FaBars, FaXmark } from 'react-icons/fa6'
 import {
   LogoContainer,
@@ -14,9 +14,8 @@ import {
   StyledList,
   StyledListItem,
 } from './style'
-import { Subtitle, Text } from '../../styles/global-style'
+import { Text } from '../../styles/global-style'
 import Button from '../Button'
-import Image from 'next/image'
 import Logo from '../Logo'
 
 const navLinks = [
@@ -25,21 +24,27 @@ const navLinks = [
     path: '#about',
   },
   {
-    title: 'Projects',
-    path: '#projects',
+    title: 'Experience',
+    path: '#experience',
   },
   {
-    title: 'Experiences',
-    path: '#experiences',
-  },
-  {
-    title: 'Contact',
-    path: '#contact',
+    title: 'Work',
+    path: '#work',
   },
 ]
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 640) {
+        setNavbarOpen(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const handleLinkClick = () => {
     setNavbarOpen(false)
@@ -51,6 +56,7 @@ export default function Navbar() {
         <LogoContainer>
           <Logo />
         </LogoContainer>
+
         <MobileMenu>
           <MenuButton onClick={() => setNavbarOpen(!navbarOpen)}>
             {navbarOpen ? (
@@ -60,6 +66,7 @@ export default function Navbar() {
             )}
           </MenuButton>
         </MobileMenu>
+
         <Menu>
           <MenuList>
             {navLinks.map((link, index) => (
@@ -82,6 +89,7 @@ export default function Navbar() {
               </StyledLink>
             </StyledListItem>
           ))}
+          <Button description='Resume' />
         </StyledList>
       ) : null}
     </main>

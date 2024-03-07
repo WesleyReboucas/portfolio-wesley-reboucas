@@ -3,10 +3,8 @@
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Contact from './components/Contact'
-import Projects from './components/Projects'
+import Work from './components/Work'
 import Experience from './components/Experience'
-import { colors } from './styles/theme'
 import About from './components/About'
 import Header from './components/Header'
 
@@ -22,10 +20,6 @@ const Content = styled.div`
   max-width: 1200px;
   transition: width 0.3s ease;
 
-  /* border: 1px solid ${colors.primary};
-  border-radius: 1rem;
-  padding: 1rem; */
-
   @media (max-width: 940px) {
     margin: 0rem;
     width: 100%;
@@ -39,9 +33,8 @@ export default function Home() {
         <Navbar />
         <Header />
         <About />
-        <Projects />
+        <Work />
         <Experience />
-        <Contact />
         <Footer />
       </Content>
     </Container>

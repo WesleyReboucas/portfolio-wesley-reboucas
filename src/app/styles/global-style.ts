@@ -37,7 +37,6 @@ export const Title = styled.h1<CodeTextProps>`
     return css`
       color: ${chosenColor};
       font-size: 3rem;
-      margin-bottom: 1rem;
       font-weight: bold;
 
       &:not(:empty)::first-letter {

@@ -1,5 +1,6 @@
 import { Section } from '@/app/styles/global-style'
 import { colors } from '@/app/styles/theme'
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export const Container = styled(Section)`
@@ -32,7 +33,28 @@ export const InfoContentTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* background-color: red; */
+  margin-bottom: 1rem;
+`
+
+export const ButtonsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 1rem 0rem;
+`
+
+export const SocialMediaContainer = styled.div`
+  display: flex;
+  align-items: center;
+
+  & > * {
+    padding: 1rem 0.2rem;
+  }
+`
+
+export const SocialMediaLink = styled(Link)`
+  display: flex;
+  font-size: 2rem;
+  color: ${colors.primary};
 `
 
 export const ImageContainer = styled.div`

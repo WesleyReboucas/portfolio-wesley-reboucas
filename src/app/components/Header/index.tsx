@@ -2,14 +2,9 @@
 
 import React from 'react'
 import { TypeAnimation } from 'react-type-animation'
+import { Bold, CodeText, Text, Title } from '../../styles/global-style'
 import {
-  Bold,
-  CodeText,
-  Subtitle,
-  Text,
-  Title,
-} from '../../styles/global-style'
-import {
+  ButtonsContainer,
   Container,
   Content,
   ImageContainer,
@@ -17,7 +12,12 @@ import {
   Info,
   InfoContentTitle,
   InfoTitle,
+  SocialMediaContainer,
+  SocialMediaLink,
 } from './style'
+import Button from '../Button'
+import { FiGithub } from 'react-icons/fi'
+import { RiLinkedinLine } from 'react-icons/ri'
 
 export default function Header() {
   return (
@@ -27,6 +27,14 @@ export default function Header() {
           <InfoTitle>
             <InfoContentTitle>
               <Title> Wesley Rebouças </Title>
+              {/* <SocialMediaContainer>
+                <SocialMediaLink href=''>
+                  <RiLinkedinLine />
+                </SocialMediaLink>
+                <SocialMediaLink href=''>
+                  <FiGithub />
+                </SocialMediaLink>
+              </SocialMediaContainer> */}
             </InfoContentTitle>
             <CodeText color='text'>
               &lt;
@@ -66,6 +74,17 @@ export default function Header() {
             <Bold> live long</Bold> and
             <Bold> prosper</Bold>!
           </Text>
+          <ButtonsContainer>
+            <Button description='Get in Touch' />
+            <SocialMediaContainer>
+              <SocialMediaLink href='https://www.linkedin.com/in/wesleyreboucas/'>
+                <RiLinkedinLine />
+              </SocialMediaLink>
+              <SocialMediaLink href='https://github.com/WesleyReboucas'>
+                <FiGithub />
+              </SocialMediaLink>
+            </SocialMediaContainer>
+          </ButtonsContainer>
         </Info>
         <ImageContainer>
           <ImageContent src={'/avatar/avatar-dev.png'} alt='Dev Image' />

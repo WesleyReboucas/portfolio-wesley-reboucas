@@ -2,7 +2,7 @@ import React from 'react'
 import { ButtonElement, Container } from './style'
 
 // Icons
-import { FiGithub } from 'react-icons/fi'
+import { FiGithub, FiMail } from 'react-icons/fi'
 import { RiLinkedinLine } from 'react-icons/ri'
 import { PiCodeLight } from 'react-icons/pi'
 
@@ -20,6 +20,9 @@ export default function Button({ icon, description }: ButtonProps) {
       break
     case 'linkedin':
       IconComponent = RiLinkedinLine
+      break
+    case 'mail':
+      IconComponent = FiMail
       break
     case 'code':
       IconComponent = PiCodeLight

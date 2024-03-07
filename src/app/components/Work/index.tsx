@@ -12,12 +12,12 @@ import { images, ImageItemProps } from '../../../utils/data'
 import Button from '../Button'
 import Link from 'next/link'
 
-export default function Projects() {
+export default function Work() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
     <Container>
-      <Subtitle $upperCaseColor>Projects</Subtitle>
+      <Subtitle $upperCaseColor>Work</Subtitle>
       <SlideElement>
         {images.map((item: ImageItemProps, index: number) => (
           <SlideItem
