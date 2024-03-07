@@ -27,14 +27,6 @@ export default function Header() {
           <InfoTitle>
             <InfoContentTitle>
               <Title> Wesley Rebouças </Title>
-              {/* <SocialMediaContainer>
-                <SocialMediaLink href=''>
-                  <RiLinkedinLine />
-                </SocialMediaLink>
-                <SocialMediaLink href=''>
-                  <FiGithub />
-                </SocialMediaLink>
-              </SocialMediaContainer> */}
             </InfoContentTitle>
             <CodeText color='text'>
               &lt;
@@ -75,7 +67,10 @@ export default function Header() {
             <Bold> prosper</Bold>!
           </Text>
           <ButtonsContainer>
-            <Button description='Get in Touch' />
+            <Button
+              link='mailto:wesley.reboucas@gmail.com'
+              description='Get in Touch'
+            />
             <SocialMediaContainer>
               <SocialMediaLink href='https://github.com/WesleyReboucas'>
                 <FiGithub size={30} />

@@ -5,13 +5,15 @@ import { ButtonElement, Container } from './style'
 import { FiGithub, FiMail } from 'react-icons/fi'
 import { RiLinkedinLine } from 'react-icons/ri'
 import { PiCodeLight } from 'react-icons/pi'
+import Link from 'next/link'
 
 interface ButtonProps {
   icon?: string
   description: string
+  link?: string
 }
 
-export default function Button({ icon, description }: ButtonProps) {
+export default function Button({ icon, description, link }: ButtonProps) {
   let IconComponent = null
 
   switch (icon) {
@@ -33,10 +35,12 @@ export default function Button({ icon, description }: ButtonProps) {
 
   return (
     <Container>
-      <ButtonElement>
-        {IconComponent && <IconComponent />}
-        {description}
-      </ButtonElement>
+      <Link href={link || '#'}>
+        <ButtonElement>
+          {IconComponent && <IconComponent />}
+          {description}
+        </ButtonElement>
+      </Link>
     </Container>
   )
 }
