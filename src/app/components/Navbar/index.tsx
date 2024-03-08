@@ -8,7 +8,6 @@ import {
   MobileMenuButton,
   SideNav,
   StyledLink,
-  StyledList,
   StyledListItem,
 } from './style'
 import Button from '../Button'
