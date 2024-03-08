@@ -34,8 +34,7 @@ const navLinks = [
 ]
 
 const resumePDF =
-  'https://github.com/WesleyReboucas/portfolio-wesley-reboucas/blob/1ba3391e6002ee78212f4cd360f455affcacf490/src/utils/%5BENG%5D%20Wesley%20Reboucas%20-%20CV.pdf'
-
+  'https://github.com/WesleyReboucas/portfolio-wesley-reboucas/blob/b0c3a58f5f613252421bbfdbd286c1969fbc2ab7/public/Wesley-Reboucas-Resume-en.pdf'
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
 
