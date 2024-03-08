@@ -28,7 +28,7 @@ export default function Experience() {
           </Duration>
           <Subtitle size={1.3}>{item.title}</Subtitle>
           <Link href={item.companyLink}>
-            <Text color='white' lineHeight={1}>
+            <Text color='white' $lineHeight={1}>
               {item.company} · {item.employmentType}
             </Text>
           </Link>

@@ -48,16 +48,16 @@ export const SlideItem = styled.div`
   }
 `
 
-export const SlideImage = styled.img<{ isHovered: boolean }>`
+export const SlideImage = styled.img<{ $isHovered: boolean }>`
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 0.8rem;
-  filter: ${({ isHovered }) => (isHovered ? 'blur(9px)' : 'none')};
+  filter: ${({ $isHovered }) => ($isHovered ? 'blur(9px)' : 'none')};
   transition: filter 0.3s ease;
 
   &:hover {
-    filter: ${({ isHovered }) => (isHovered ? 'blur(3px)' : 'none')};
+    filter: ${({ $isHovered }) => ($isHovered ? 'blur(3px)' : 'none')};
   }
 `
 

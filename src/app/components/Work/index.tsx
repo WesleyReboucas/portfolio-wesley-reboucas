@@ -14,8 +14,6 @@ import Link from 'next/link'
 export default function Work() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
-  console.log(workImages)
-
   return (
     <Container>
       <Subtitle $upperCaseColor>Work</Subtitle>
@@ -35,7 +33,7 @@ export default function Work() {
               </ButtonPanel>
             )}
             <SlideImage
-              isHovered={hoveredIndex === index}
+              $isHovered={hoveredIndex === index}
               src={item.src}
               alt={item.alt}
             />

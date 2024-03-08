@@ -12,7 +12,6 @@ import { SlLocationPin } from 'react-icons/sl'
 export default function Contact() {
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault()
-    console.log('Formulário enviado!')
   }
 
   return (

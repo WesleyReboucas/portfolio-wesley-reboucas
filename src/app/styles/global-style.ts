@@ -7,7 +7,7 @@ type ColorKey = keyof typeof colors
 interface CodeTextProps {
   color?: ColorKey
   $upperCaseColor?: boolean
-  lineHeight?: number
+  $lineHeight?: number
   size?: number
 }
 
@@ -83,7 +83,7 @@ export const Text = styled.p<CodeTextProps>`
       font-size: ${props.size ? props.size : 1.05}rem;
       font-weight: 400;
       white-space: normal;
-      line-height: ${props.lineHeight ? props.lineHeight : 1.7}rem;
+      line-height: ${props.$lineHeight ? props.$lineHeight : 1.7}rem;
 
       &:not(:empty)::first-letter {
         color: ${uppercaseColor};
