@@ -26,7 +26,7 @@ export default function About() {
     return age
   }
   return (
-    <Container>
+    <Container id='about'>
       <Subtitle $upperCaseColor> About me </Subtitle>
       <Content>
         <Info>

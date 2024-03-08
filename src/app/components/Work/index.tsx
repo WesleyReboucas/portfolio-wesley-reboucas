@@ -15,7 +15,7 @@ export default function Work() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null)
 
   return (
-    <Container>
+    <Container id='work'>
       <Subtitle $upperCaseColor>Work</Subtitle>
       <SlideElement>
         {workImages.map((item: WorkImageItemProps, index: number) => (

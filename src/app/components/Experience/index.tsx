@@ -17,7 +17,7 @@ import Highlights from '../Highlights'
 
 export default function Experience() {
   return (
-    <Container>
+    <Container id='experience'>
       <Subtitle $upperCaseColor>Experience</Subtitle>
       {experiences.map((item: ExperiencesProps, index: number) => (
         <Content key={index}>
