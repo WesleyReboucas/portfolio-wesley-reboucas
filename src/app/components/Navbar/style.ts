@@ -94,7 +94,7 @@ export const StyledList = styled.ul`
   align-items: flex-end;
   margin-right: 1rem;
   position: fixed;
-  top: 5%;
+  top: 7%;
   right: 0;
   background-color: black;
   z-index: 1;
