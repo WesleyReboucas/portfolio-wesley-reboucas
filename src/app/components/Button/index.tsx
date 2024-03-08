@@ -11,9 +11,15 @@ interface ButtonProps {
   icon?: string
   description: string
   link?: string
+  download?: string
 }
 
-export default function Button({ icon, description, link }: ButtonProps) {
+export default function Button({
+  icon,
+  description,
+  link,
+  download,
+}: ButtonProps) {
   let IconComponent = null
 
   switch (icon) {
@@ -35,7 +41,7 @@ export default function Button({ icon, description, link }: ButtonProps) {
 
   return (
     <Container>
-      <Link href={link || '#'}>
+      <Link download={download} href={link || '#'}>
         <ButtonElement>
           {IconComponent && <IconComponent />}
           {description}
