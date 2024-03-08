@@ -16,8 +16,8 @@ const Container = styled.div`
 
 const Content = styled.div`
   margin: 1rem;
-  width: 70%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 75rem;
   transition: width 0.3s ease;
 
   @media (max-width: 940px) {

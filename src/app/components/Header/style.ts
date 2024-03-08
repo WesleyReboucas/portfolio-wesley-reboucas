@@ -10,10 +10,6 @@ export const Container = styled(Section)`
 export const Content = styled.div`
   display: flex;
   align-items: center;
-
-  @media (max-width: 1224px) {
-    flex-direction: column-reverse;
-  }
 `
 
 export const Info = styled.div`
@@ -60,8 +56,10 @@ export const SocialMediaLink = styled(Link)`
 `
 
 export const ImageContainer = styled.div`
-  width: 30%;
-  @media (max-width: 1224px) {
+  width: 100%;
+  min-width: 16rem;
+  max-width: 20rem;
+  @media (max-width: 880px) {
     display: none;
   }
 `
