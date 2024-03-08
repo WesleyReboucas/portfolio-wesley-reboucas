@@ -6,6 +6,7 @@ import { FiGithub, FiMail } from 'react-icons/fi'
 import { RiLinkedinLine } from 'react-icons/ri'
 import { PiCodeLight } from 'react-icons/pi'
 import Link from 'next/link'
+import { Text } from '@/app/styles/global-style'
 
 interface ButtonProps {
   icon?: string
@@ -44,7 +45,7 @@ export default function Button({
       <Link download={download} href={link || '#'}>
         <ButtonElement>
           {IconComponent && <IconComponent />}
-          {description}
+          <Text color='white'>{description}</Text>
         </ButtonElement>
       </Link>
     </Container>

@@ -34,10 +34,6 @@ export const ButtonElement = styled.button<ButtonProps>`
         border-color: ${chosenBorderColor};
       }
 
-      & > * {
-        margin-right: 0.5rem;
-      }
-
       &:focus {
         /* box-shadow: 0 0 0 3px ${colors.yellow}; */
       }
