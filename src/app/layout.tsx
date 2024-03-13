@@ -23,9 +23,9 @@ export default function RootLayout({
       <body>
         <StyledComponentsRegistry>
           <GlobalStyle />
+          {children}
           <SpeedInsights />
           <Analytics />
-          {children}
         </StyledComponentsRegistry>
       </body>
     </html>
