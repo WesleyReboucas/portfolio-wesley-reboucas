@@ -1,4 +1,5 @@
 'use client'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
@@ -30,6 +31,7 @@ export default function Home() {
   return (
     <Container>
       <Content>
+        <SpeedInsights />
         <Navbar />
         <Header />
         <About />
