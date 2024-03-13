@@ -1,6 +1,4 @@
 'use client'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import { Analytics } from '@vercel/analytics/react'
 
 import styled from 'styled-components'
 import Navbar from './components/Navbar'
@@ -32,8 +30,6 @@ export default function Home() {
   return (
     <Container>
       <Content>
-        <SpeedInsights />
-        <Analytics />
         <Navbar />
         <Header />
         <About />
